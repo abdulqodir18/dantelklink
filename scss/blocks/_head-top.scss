@@ -1,6 +1,6 @@
 .site-header__head {
 }
-.site-heade {
+.site-head {
   display: flex;
   justify-content: space-between;
   align-items: center; 
@@ -22,7 +22,7 @@
   }
 }
 @media only screen and (max-width:1024px) {
-  .site-heade {
+  .site-head {
     display: none;
   }
 }

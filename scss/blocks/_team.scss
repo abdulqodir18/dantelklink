@@ -1,0 +1,172 @@
+.team {
+  padding-bottom: 70px;
+}
+.container {
+}
+.team__container {
+}
+.team__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #272727;
+  text-align: center;
+  position: relative;
+  
+  &::before {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 50px;
+    height: 3px;
+    background-color: #FFD600;
+  }
+  
+  &::after {
+    content: ":D :P";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 275px;
+    height: 152px;
+    font-size: 130px;
+    line-height: 152px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.team__text {
+  margin: 0;
+  margin-bottom: 21px;
+  max-width: 930px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px; 
+  text-align: center;
+  color: #4D4D4D;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.team__inner {
+  display: flex;
+  align-items: center;
+}
+.team__button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  min-width: 42px;
+  height: 49px;
+  border: 2px solid #1D6ECB;
+  border-radius: 5px;
+  background-position: center;
+  background-size: 21px 15px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.team__button--pervios {
+  background-image: url("../img/Polygon.svg");
+  transform: rotate(-180deg);
+}
+.team__button--next {
+  order: 1;
+  background-image: url("../img/Polygon.svg");
+}
+@media only screen and (max-width:450px) {
+  .team__button {
+    display: none;
+  }
+}
+.team__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+  margin-left: 26px;
+  margin-right: 26px;
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+}
+.team__item {
+  margin-right: 52px;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.team-item {
+  max-width: 300px;
+  
+  &::before {
+    content:"";
+    width: 300px;
+    height: 350px;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 15px;
+  }
+}
+.team-item--anna::before {
+  background-image: url("../img/anna.jpg");
+}
+.team-item--ivan::before {
+  background-image: url("../img/ivan.jpg");
+}
+.team-item--larisa::before {
+  background-image: url("../img/larisa.jpg");
+}
+
+@include retina-bg {
+  .team-item--anna::before {
+    background-image: url("../img/anna@2x.jpg");
+  }
+  .team-item--ivan::before {
+    background-image: url("../img/ivan@2x.jpg");
+  }
+  .team-item--larisa::before {
+    background-image: url("../img/larisa@2x.jpg");
+  }
+}
+.team-item__text-name {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.team-item__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;  
+  color: #000000;
+}
+@media only screen and (max-width:450px) {
+  .team__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .team__item {
+    margin-right: 45px;
+  }
+  .team-item {
+    max-width: 252px;
+    &::before {
+      content:"";
+      width: 252px;
+      height: 300px;
+    }
+  }
+}
