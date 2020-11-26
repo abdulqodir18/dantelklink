@@ -1,0 +1,36 @@
+.head-bottom__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media only screen and (max-width:1024px) {
+  .head-bottom__inner {
+    width: 70%;
+  }
+}
+@media only screen and (max-width:950px) {
+  .head-bottom__inner {
+    display: none;
+  }
+  .head-bottom__inner--open{
+    display: flex;
+    order: 1;
+    width: 100%;
+    margin-top: 24px;
+    
+  }
+  .head-bottom__inner--open + .head-bottom__button{
+    background-image: url("../img/close.png");
+  }
+}
+@include retina-bg {
+  .head-bottom__inner--open + .head-bottom__button{
+    background-image: url("../img/close@2x.png");
+  }
+}
+@media only screen and (max-width:700px) {
+  .head-bottom__inner {
+    flex-direction: column;
+  }
+}

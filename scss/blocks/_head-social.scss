@@ -1,0 +1,39 @@
+.head-bottom__social {
+}
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.social__item {
+  
+  
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
+.social__link {
+  padding: 13px;
+  
+  &:last-child {
+    padding-right: 0;
+  }
+}
+.social__img {
+  width: 29px;
+  height: 29px;
+  
+  &--small {
+    width: 16px;
+    height: 16px;
+  }
+  &--mediom {
+    width: 18px;
+    height: 18px;
+  }
+}

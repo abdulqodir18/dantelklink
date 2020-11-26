@@ -1,0 +1,62 @@
+.hero__buttons {
+  position: absolute;
+  z-index: 1;
+  bottom: 147px;
+  left: calc(50% - 560px);
+}
+.hero__button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFD600;
+  border-radius: 5px;
+  height: 70px;
+  @include hover
+}
+.hero__button--open {
+  width: 42px;
+  background-size: 17px 25px;
+  background-image: url("../img/Arrow.png");
+  margin-right: 9px;
+}
+
+.hero__button--close {
+  width: 70px;
+  background-size: 25px 25px;
+  background-image: url("../../img/next.png");
+}
+@include retina-bg{
+  .hero__button--open {
+    background-image: url("../img/Arrow@2x.png");
+  }
+  .hero__button--close {
+    background-image: url("../img/next@2x.png");
+  }
+}
+@media only screen and (max-width:1200px) {
+  .hero__buttons {
+    left: 34px; 
+  }
+}
+@media only screen and (max-width:900px) {
+  .hero__buttons {
+    top: 50%;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width:500px) {
+  .hero__buttons {
+    top: 65%;
+  }
+  .hero__button {
+    height: 44px;
+  }
+  .hero__button--open {
+    width: 26px;
+  }
+  .hero__button--close {
+   width: 44px;
+  }
+}

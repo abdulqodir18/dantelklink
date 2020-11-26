@@ -1,0 +1,22 @@
+.site-header {
+}
+
+.container {
+}
+
+.site-header__wrapper {
+  position: fixed;
+  z-index: 50;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media only screen and (max-width:1024px) {
+  .site-header__wrapper {
+    position: relative;
+  }
+  .site-header__container {
+    padding: 0;
+  }
+}

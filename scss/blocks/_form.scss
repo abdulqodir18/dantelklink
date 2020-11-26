@@ -1,0 +1,107 @@
+.statr__form {
+}
+.form {
+  max-width: 550px;
+  padding: 33px 25px;
+  background-color: #0055B8;
+  border-radius: 5px;
+}
+.form__title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  
+}
+.form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form__input {
+  outline: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  width: 100%;
+  padding: 20px 14px;
+  margin-bottom: 12px;
+  background-color: #0055B8;
+  border-radius: 5px;
+
+  &:focus {
+    background-color: #FFFFFF;
+  }
+}
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+
+}
+.form__button {
+  padding: 0;
+  border: none;
+  background-color: #FFD600;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #272727;
+  padding: 17px;
+  text-align: center;
+  width: 230px;
+  margin-bottom: 22px;
+
+  @include hover
+}
+.form_check {
+  display: none;
+}
+.form__checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.checkbox {
+  width: 100%;
+}
+.checkbox__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  width: 256px;
+  color: #FFFFFF;
+}
+.checkbox__box {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-position: center;
+  background-size: 23px 16px;
+  background-repeat: no-repeat;
+}
+.form_check:checked + .checkbox > .checkbox__box {
+  background-image: url("../../img/soglasie.png");
+}
+
+@media only screen and (max-width:900px) {
+  .form {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width:500px) {
+  .form__button {
+    width: 100%;
+  }
+}

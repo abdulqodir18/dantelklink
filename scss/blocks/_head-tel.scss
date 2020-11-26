@@ -1,0 +1,45 @@
+.site-head__tel-wrapper {
+  text-decoration: none;
+  max-width: 160px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-image: url("../img/phone.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+  }
+
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
+.site-head__tel-wrapper {
+}
+.site-head-tel {
+}
+.site-head__tel-text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+  margin-bottom: 3px;
+}
+.site-head__tel {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+}

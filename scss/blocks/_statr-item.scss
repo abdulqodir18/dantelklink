@@ -1,0 +1,58 @@
+.statr-item {
+  text-align: center;
+  max-width: 300px;
+  border-radius: 5px;
+  padding: 39px 36px;
+  &::before {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    content: "";
+    display: block;
+    width: 87px;
+    height: 86px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 18px;
+  }
+}
+.statr-item--treatment {
+  &::before {
+    background-image: url("../img/tre.png");
+  }
+  background-color:  #FFD600;
+}
+.statr-item--prosthetics {
+  &::before {
+    background-image: url("../img/awe.png");
+  }
+  background-color: #FFE040;
+}
+@include retina-bg {
+  .statr-item--treatment {
+    &::before {
+      background-image: url("../img/tre@2x.png");
+    }
+  }
+  .statr-item--prosthetics {
+    &::before {
+      background-image: url("../img/awe@2x.png");
+    }
+  }
+}
+.statr-item__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 21px; 
+  color: #272727;
+}
+.statr-itme__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #272727;
+}
+

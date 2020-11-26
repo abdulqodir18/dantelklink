@@ -11,10 +11,12 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  background-color: #E5E5E5;
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  margin-top: 126px;
+  font-family:"Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -22,4 +24,9 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+@media only screen and (max-width:1024px) {
+  body {
+    margin-top: 60px;
+  }
 }

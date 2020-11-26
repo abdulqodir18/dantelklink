@@ -1,0 +1,28 @@
+.site-header__head {
+}
+.site-heade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding-top: 12px;
+  padding-bottom: 56px;
+}
+.site-head__logo {
+}
+.site-head__logo-img {
+  display: block;
+  width: 103px;
+  height: 56px;
+
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .site-heade {
+    display: none;
+  }
+}

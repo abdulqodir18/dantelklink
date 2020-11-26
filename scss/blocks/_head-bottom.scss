@@ -1,0 +1,78 @@
+.site-header__bottom {
+}
+.head-bottom {
+  position: absolute;
+  z-index: 50;
+  top: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0055B8;
+  border-radius: 5px;
+  padding: 20px 33px;
+}
+.head-bottom__logo {
+  display: none;
+}
+.head-bottom__logo-img {
+  display: block;
+  width: 140px;
+  height: 21px;
+
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
+.head-bottom__button {
+  display: none;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 25px;
+  height: 18px;
+  background-image: url("../img/gamburger.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@include retina-bg {
+  .head-bottom__button {
+    background-image: url("../img/gamburger@2x.png");
+  }
+}
+
+
+@media only screen and (max-width:1120px) {
+  .head-bottom {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .head-bottom {
+    position: fixed;
+    top: 0;
+    border-radius:  0;
+  }
+  .head-bottom__logo {
+    display: block;
+  }
+}
+@media only screen and (max-width:950px) {
+  .head-bottom {
+    flex-wrap: wrap;
+  }
+  .head-bottom__button {
+  display: block;
+  }
+}
+@media only screen and (max-width:700px) {
+  .head-bottom {
+    padding: 24px 20px;
+  }
+}
