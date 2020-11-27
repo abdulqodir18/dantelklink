@@ -2,6 +2,7 @@
 }
 .form {
   max-width: 550px;
+  width: 100%;
   padding: 33px 25px;
   background-color: #0055B8;
   border-radius: 5px;
@@ -91,7 +92,7 @@
   background-repeat: no-repeat;
 }
 .form_check:checked + .checkbox > .checkbox__box {
-  background-image: url("../../img/soglasie.png");
+  background-image: url("../img/soglasie.png");
 }
 
 @media only screen and (max-width:900px) {

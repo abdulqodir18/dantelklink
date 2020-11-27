@@ -1,0 +1,104 @@
+.map {
+  position: relative;
+  padding-bottom: 70px;
+}
+.container {
+}
+.map__continer {
+  display: flex;
+  flex-direction: column;
+}
+.map__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px; 
+  color: #272727;
+  max-width: 637px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  
+  &::before {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    width: 50px;
+    height: 3px;
+    background-color: #FFD600;
+  }
+  
+  &::after {
+    content: ":D :P";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 275px;
+    height: 152px;
+    font-size: 130px;
+    line-height: 152px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.05);
+  }
+}
+.map__text {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 879px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px; 
+  color: #000000;
+}
+.map__link {
+  overflow-x: hidden;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 100%;
+  height: 760px;
+  transform: translateX(-50%);
+}
+.map__img {
+  width: 100%;
+  height: 760px;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  overflow-x: hidden;
+}
+.map__form {
+  position: relative;
+  z-index: 5;
+  margin-top: 151px;
+}
+@media only screen and (max-width:650px) {
+  .map__continer {
+    align-items: center;
+    padding: 0;
+  }
+  .map__link {
+    position: relative;
+    width: 100%;
+    height: 206px;
+  }
+  .map__img {
+    width: 100%;
+    height: 206px;
+  }
+  .map__form {
+    margin-top: 0;
+    margin-bottom: 70px;
+    order: -1;
+  }
+}
